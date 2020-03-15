@@ -1,4 +1,4 @@
-name: Build OpenWrt
+name: Lean SSR
 
 on:
   release:
@@ -7,16 +7,16 @@ on:
     branches:
       - master
     paths:
-      - '.config'
+      - 'gdock.config'
 #  schedule:
 #    - cron: 0 8 * * 5
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: .config
+  CONFIG_FILE: gdock.config
   DIY_SH: diy.sh
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
@@ -102,5 +102,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_firmware
+        name: GDock_OpenWrt_firmware
         path: ${{ env.FIRMWARE }}
