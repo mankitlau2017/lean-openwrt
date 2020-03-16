@@ -7,6 +7,7 @@ git clone https://github.com/jerrykuku/luci-app-vssr package/luci-app-vssr
 git clone https://github.com/Lienol/openwrt-package package/openwrt-package
 git clone https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
 git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+rm -f -r package/firmware/ath10k-firmware/Makefile
 git clone https://github.com/mankitlau2017/lean-openwrt/package/firmware/ath10k-firmware package/firmware/ath10k-firmware
 ./scripts/feeds update -a
 ./scripts/feeds install -a
