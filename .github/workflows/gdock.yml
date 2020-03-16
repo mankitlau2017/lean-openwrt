@@ -18,7 +18,7 @@ env:
   REPO_BRANCH: master
   CONFIG_FILE: gdock.config
   DIY_SH: gdockdiy.sh
-  SSH_ACTIONS: false
+  SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
