@@ -5,5 +5,6 @@ sed -i 's/Openwrt/mAnkItlau/g' package/kernel/mac80211/files/lib/wifi/mac80211.s
 git clone https://github.com/jerrykuku/lua-maxminddb package/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr package/luci-app-vssr
 git clone https://github.com/Lienol/openwrt-package package/openwrt-package
+git clone https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
 ./scripts/feeds update -a
 ./scripts/feeds install -a
